@@ -1,0 +1,65 @@
+.navbar {
+  width: 100%;
+  background-color: #603F83FF;
+  overflow: auto;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 22%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #0063B2FF;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {-
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+.main{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 15px;
+}
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.footer{
+  background-color: #603F83FF;
+  text-align: left;
+  position: bottom;
+  position: fixed;
+  left: 4;
+  bottom: 0;
+  width:100%;
+  height: 70px;
+  color: #f2f2f2;
+}
+
